@@ -12,6 +12,7 @@ import {
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
+import { Select, SelectItem, SelectList, SelectTrigger } from "../ui/select";
 
 
 export const CreateKnowledgeBaseSheet = () => {
@@ -38,7 +39,7 @@ export const CreateKnowledgeBaseSheet = () => {
 
                 <SheetBody className="flex flex-col gap-5 p-4">
                     <div className="flex flex-col gap-1.5">
-                        <label className="text-sm font-medium text-zinc-700">
+                        <label className="text-sm font-medium ">
                             Name (Cannot be edited later) <span className="text-red-500">*</span>
                         </label>
                         <Input
@@ -48,10 +49,51 @@ export const CreateKnowledgeBaseSheet = () => {
                     </div>
 
                     <div className="flex flex-col gap-1.5">
-                        <label className="text-sm font-medium text-zinc-700">
+                        <label className="text-sm font-medium ">
                             Description
                         </label>
                         <Textarea rows={5} placeholder="Description" />
+                    </div>
+
+                    <div className="flex flex-col gap-1.5">
+                        <label className="text-sm font-medium ">
+                            Vector Store <span className="text-red-500">*</span>
+                        </label>
+                        <Select className="w-full">
+                            <SelectTrigger>
+                                Select Vector Store
+                            </SelectTrigger>
+                            <SelectList>
+                                <SelectItem>
+                                    Pinecone
+                                </SelectItem>
+                                <SelectItem>
+                                    Qdrant
+                                </SelectItem>
+                                <SelectItem>
+                                    Chroma DB
+                                </SelectItem>
+                            </SelectList>
+                        </Select>
+                    </div>
+
+                    <div className="flex flex-col gap-1.5">
+                        <label className="text-sm font-medium ">
+                            LLM Embedding Model <span className="text-red-500">*</span>
+                        </label>
+                        <Select className="w-full">
+                            <SelectTrigger >
+                                Select Embedding Model
+                            </SelectTrigger>
+                            <SelectList>
+                                <SelectItem>
+                                    text-embedding-ada-002
+                                </SelectItem>
+                                <SelectItem>
+                                    text-embedding-3-small
+                                </SelectItem>
+                            </SelectList>
+                        </Select>
                     </div>
                     <div className="flex justify-end pt-2">
                         <Button

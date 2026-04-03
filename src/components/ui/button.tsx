@@ -12,7 +12,7 @@ const variants = {
   surface:
     "bg-surface hover:bg-surface-hover border-primary-border text-text-muted hover:text-text-light",
   outline:
-    "bg-transparent hover:bg-surface border-primary-border hover:border-primary text-text-muted hover:text-text-light",
+    "bg-transparent hover:bg-surface border-primary-border hover:border-primary text-foreground-muted hover:text-foreground",
   ghost:
     "bg-transparent hover:bg-surface border-transparent text-secondary hover:text-secondary-hover",
   danger:

@@ -16,7 +16,7 @@ const overlay =
 const content =
     "fixed top-0 z-20 h-full max-w-lg w-full bg-white transition-transform duration-300 ease-linear";
 const header =
-    "w-full flex items-start justify-between p-4 border-b border-b-zinc-200";
+    "w-full flex items-start justify-between p-4 border-b border-secondary/10";
 const title = "text-lg leading-normal font-semibold text-foreground";
 const description = "text-sm leading-normal font-normal text-foreground-muted";
 const body = "w-full text-sm leading-normal font-normal text-foreground";
