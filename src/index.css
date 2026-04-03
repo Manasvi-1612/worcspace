@@ -6,6 +6,7 @@
   --color-primary-light: rgba(79, 70, 229, 0.15);
   --color-primary-border: rgba(54, 48, 130, 0.79);
   --color-primary-ring: rgba(79, 70, 229, 0.25);
+  --color-primary-200: #a9a9f4;
 
   --color-secondary: #1e1b4b;
   --color-secondary-hover: #2d2a6e;
@@ -13,8 +14,8 @@
   --color-surface: rgba(99, 102, 241, 0.12);
   --color-surface-hover: rgba(99, 102, 241, 0.22);
 
-  --color-primary-200: #a9a9f4;
-
+  --color-foreground: #020817;
+  --color-foreground-muted: #64748b;
   --color-text-muted: #a5b4fc;
   --color-text-subtle: #818cf8;
   --color-text-on-primary: #ffffff;

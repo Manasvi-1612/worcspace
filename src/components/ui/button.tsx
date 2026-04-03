@@ -14,9 +14,10 @@ const variants = {
   outline:
     "bg-transparent hover:bg-surface border-primary-border hover:border-primary text-text-muted hover:text-text-light",
   ghost:
-    "bg-transparent hover:bg-surface border-transparent text-text-muted hover:text-text-light",
+    "bg-transparent hover:bg-surface border-transparent text-secondary hover:text-secondary-hover",
   danger:
     "bg-red-600 hover:bg-red-700 border-red-600 hover:border-red-700 text-white",
+  link: "bg-transparent border-transparent hover:bg-surface text-secondary hover:text-secondary-hover font-normal justify-start w-full rounded-lg",
 };
 
 const sizes = {

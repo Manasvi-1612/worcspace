@@ -29,7 +29,7 @@ const Logo = () => (
   </svg>
 );
 
-const KbdBadge: FC = () => (
+const KbdBadge = () => (
   <span className="flex items-center gap-0.5 px-1.5 py-0.5 rounded border border-primary-border bg-primary-light text-text-subtle font-mono text-[11px] leading-none shrink-0 select-none">
     <span className="text-[13px] leading-none">⌘</span>K
   </span>
@@ -54,12 +54,7 @@ const UserAvatar: FC<{ initials: string; onClick?: () => void }> = ({
   </button>
 );
 
-interface HeaderProps {
-  workspaceName?: string;
-  userInitials?: string;
-}
-
-const Header: FC<HeaderProps> = ({
+const Header = ({
   workspaceName = "Worcspace 1",
   userInitials = "GK",
 }) => {

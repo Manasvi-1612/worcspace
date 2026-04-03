@@ -1,11 +1,12 @@
 import Layout from "./components/shared/layout"
+import { KnowledgeBase } from "./pages/knowledge-base"
 
 function App() {
 
   return (
     <div>
       <Layout>
-        ckdn
+        <KnowledgeBase />
       </Layout>
     </div>
   )
