@@ -96,9 +96,9 @@ export const Pagination = ({
     }
 
     return (
-        <div className="flex items-center justify-end gap-6 lg:gap-8 px-1 py-3">
+        <div className="flex items-center justify-end gap-6 lg:gap-8 px-1 py-3 ">
 
-            <div className="flex items-center gap-3">
+            <div className="hidden sm:flex items-center gap-3">
                 <span className="text-sm font-medium text-secondary whitespace-nowrap">
                     {label}
                 </span>

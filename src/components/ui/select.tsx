@@ -146,7 +146,7 @@ interface SelectListPropsType {
 }
 
 const SelectList: FC<SelectListPropsType> = ({ children, className }) => {
-    const { isOpen, setIsOpen } = useSelectContext();
+    const { isOpen } = useSelectContext();
 
     return (
         <div

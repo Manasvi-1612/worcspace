@@ -1,8 +1,9 @@
 import { type FC, useState } from "react";
-import { ChevronDown, Search, Bell } from "lucide-react";
+import { ChevronDown, Search, Bell, TextAlignStart } from "lucide-react";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { cn } from "../../lib/cn";
+import { useSidebar } from "../../context/sidebar-context";
 
 const Logo = () => (
   <svg
@@ -59,6 +60,8 @@ const Header = ({
   userInitials = "GK",
 }) => {
   const [query, setQuery] = useState("");
+  const { toggle } = useSidebar();
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(e.target.value);
@@ -66,18 +69,27 @@ const Header = ({
 
   return (
     <header className="w-full h-14 flex items-center justify-between gap-4 px-4 bg-linear-to-r from-[#12102d] via-[#2c276c] to-[#12102d] p-5 shadow xs:pl-4 xs:pr-3 rounded-xl">
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 lg:hidden">
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={toggle}
+          aria-label="Toggle sidebar"
+          className="text-text-muted hover:text-text-light lg:hidden"
+        >
+          <TextAlignStart size={20} strokeWidth={1.5} />
+        </Button>
         <div>
           <Logo />
         </div>
 
-        <Button variant="surface" size="sm" className="rounded-full">
+        <Button variant="surface" size="sm" className="rounded-full max-lg:hidden">
           {workspaceName}
           <ChevronDown size={13} strokeWidth={2} />
         </Button>
       </div>
 
-      <div className="flex-1 max-w-sm">
+      <div className="flex-1 max-w-sm max-sm:hidden">
         <Input
           type="search"
           theme="dark"
