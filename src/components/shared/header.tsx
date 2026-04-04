@@ -69,7 +69,7 @@ const Header = ({
 
   return (
     <header className="w-full h-14 flex items-center justify-between gap-4 px-4 bg-linear-to-r from-[#12102d] via-[#2c276c] to-[#12102d] p-5 shadow xs:pl-4 xs:pr-3 rounded-xl">
-      <div className="flex items-center gap-3 lg:hidden">
+      <div className="flex items-center gap-3">
         <Button
           variant="ghost"
           size="icon"
